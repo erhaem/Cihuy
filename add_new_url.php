@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     require_once __DIR__."/helper.php";
 
-    $isInvalidRequest = empty($_POST['destination_url']) 
+    $isInvalidRequest = empty($_POST['destination_url'])
         && empty($_POST['slug'])
         && !is_string($_POST['destination_url'])
         && !is_string($_POST['slug']);
@@ -94,7 +94,7 @@ SHOW_HTML:
                 </span>
                 <strong>Log Out</strong>
               </a>
-            </div> 
+            </div>
           </div>
         </div>
       </nav>
@@ -121,9 +121,9 @@ SHOW_HTML:
                     <div class="control">
                         <button class="button is-link" type="submit">Submit</button>
                         <button class="button is-danger" type="reset">Reset</button>
-                        <button class="button is-light">
-                            <a href="dashboard.php">Back</a>
-                        </button>
+                        <a href="dashboard.php">
+                          <button class="button is-light" type="button">Back</button>
+                        </a>
                     </div>
                 </div>
             </form>
